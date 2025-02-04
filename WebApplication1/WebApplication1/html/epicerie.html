@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Épicerie</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>Épicerie en Ligne</h1>
+	<form method="get" action="/traitement_epicerie">
+		<label for="fruits">Choisissez un fruit :</label>
+		<select name="fruits" id="fruits" multiple required>
+			<option value="pomme">Pomme</option>
+			<option value="banane">Banane</option>
+			<option value="cerise">Cerise</option>
+			<option value="fraise">Fraise</option>
+		</select>
+		<br><br>
+		<label for="quantite">Quantité :</label>
+		<input type="number" id="quantite" name="quantite" min="1" max="100" step="1" value="1" required>
+		<br><br>
+		<button type="submit">Commander</button>
+	</form>
+	<br />
+	<a href='/acceuil'>Retour à la page d'accueil</a>
+</body>
+</html>
